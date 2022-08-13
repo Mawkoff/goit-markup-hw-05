@@ -440,6 +440,8 @@ padding-left: 32px;
     margin: 0 auto;
     display: block;
 
+    transition: color var(--primary-white-color), background var(--second-title-color) ;
+
 }
 
 .hero-button:focus,
@@ -951,19 +953,22 @@ padding: 0 12px;
     background-color: var(--second-title-color);
 }
 
+/* -----------------MODAL_______________ */
+
+ 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
     min-height: 581px;
-    background: 
+    background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
     transform: translate(-50%, -50%);
     
     opacity: 1;
-    transition: width var, opacity var, visibility var;
+    transition: width opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-icon {
@@ -981,7 +986,7 @@ padding: 0 12px;
     background: rgba(0, 0, 0, 0.2);
     visibility: visible;
     opacity: 1;
-    transition: opacity var(--main-transition), visibility var(--main-transition);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) , visibility opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is.hidden {
@@ -992,7 +997,7 @@ padding: 0 12px;
 
 
 .backdrop.is.hidden .modal {
-        width: 0;
+    width: 0;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
