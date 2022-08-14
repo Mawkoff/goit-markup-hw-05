@@ -474,7 +474,7 @@ padding-left: 32px;
     margin: 0 auto;
     display: block;
 
-    transition: color var(--primary-white-color), background-co var(--second-title-color) ;
+    transition: background-color var(--main-transition);
 
 }
 
