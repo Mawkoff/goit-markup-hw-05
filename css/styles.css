@@ -442,7 +442,7 @@ padding-left: 32px;
     margin: 0 auto;
     display: block;
 
-    transition: color var(--primary-white-color), background var(--second-title-color) ;
+    transition: color var(--primary-white-color), background-color var(--second-title-color) ;
 
 }
 
@@ -855,15 +855,16 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
-color: var(--primary-white-color)
+color: var(--primary-white-color);
 
-
+transition: color var(--main-transition), background-color var(--main-transition);
 
 }
 
 .address-mail {
 
 margin-bottom: 9px;
+
     
 }
 
@@ -876,6 +877,7 @@ letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
 
+transition: color var(--main-transition), background-color var(--main-transition);
 }
 
 .address-tel {
