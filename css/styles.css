@@ -589,6 +589,7 @@ button {
 .clients-type:hover .partner-foto,
 .clients-type:focus .partner-foto {
   fill: var(--second-title-color);
+  transition: var(--main-transition);
 }
 
 .clients-type {
