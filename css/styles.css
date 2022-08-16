@@ -930,6 +930,10 @@ body {
   overflow: hidden;
 }
 
+.development-foto {
+  transition: box-shadow var(--main-transition);
+}
+
 .development-foto:hover .development-top-text,
 .development-foto:focus .development-top-text {
   transform: translateY(0);
