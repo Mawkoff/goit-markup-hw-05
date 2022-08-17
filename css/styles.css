@@ -591,6 +591,7 @@ button {
 }
 
 .link-icon {
+  fill: var(--fill-svg-color);
   height: 20px;
   width: 20px;
 }
