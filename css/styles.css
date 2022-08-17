@@ -149,7 +149,7 @@ button {
 }
 
 .header-link:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 .heaper-link {
@@ -569,9 +569,10 @@ button {
   height: 44px;
   border-radius: 50%;
   fill: var(--fill-svg-color);
-
-  transition: color var(--main-transition),
-    background-color var(--main-transition);
+  background-color: inherit;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-soc-link:hover .link-icon,
