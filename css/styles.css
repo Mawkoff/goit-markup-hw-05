@@ -586,8 +586,6 @@ button {
 .link-icon {
   fill: var(--fill-svg-color);
   transition: fill var(--main-transition);
-  height: 20px;
-  width: 20px;
 }
 
 /* 
