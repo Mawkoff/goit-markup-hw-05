@@ -111,6 +111,7 @@ button {
 
 .header-link {
   color: inherit;
+  transition: color var(--main-transition);
 }
 
 .current {
@@ -414,17 +415,20 @@ button {
 }
 
 .work-foto-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #ffffff;
 
-  padding: 27px 24px;
-  width: 100%;
+  width: 370px;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
@@ -591,6 +595,7 @@ button {
 }
 
 .partner-foto {
+  transition: fill var(--main-transition);
   fill: #afb1b8;
 }
 
