@@ -570,19 +570,12 @@ button {
   border-radius: 50%;
   fill: var(--fill-svg-color);
   background-color: inherit;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--main-transition);
 }
 
 .item-soc-link:hover .link-icon,
 .item-soc-link:focus .link-icon {
   fill: var(--primary-white-color);
-}
-
-.link-icon:hover,
-.link-icon:focus {
-  border-color: var(--second-title-color);
 }
 
 .item-soc-link:focus,
@@ -592,6 +585,7 @@ button {
 
 .link-icon {
   fill: var(--fill-svg-color);
+  transition: fill var(--main-transition);
   height: 20px;
   width: 20px;
 }
